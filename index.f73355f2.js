@@ -1,0 +1,2 @@
+var opros=document.querySelector(".opros"),random=function(t,n){var o=t+Math.random()*(n-t+1);return Math.floor(o)},btn=document.querySelector("#btn");btn.addEventListener("mouseenter",(function(){btn.style.left="".concat(random(0,90),"%"),btn.style.top="".concat(random(0,90),"%")})),btn.addEventListener("click",(function(){opros.textContent="Мінздрав рекомендує!"}));
+//# sourceMappingURL=index.f73355f2.js.map

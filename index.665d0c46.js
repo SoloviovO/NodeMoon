@@ -1,0 +1,2 @@
+var time=document.getElementById("time"),day=document.getElementById("day"),midday=document.getElementById("midday"),clock=setInterval((function(){var e,t=new Date,d=t.getHours(),n=t.getMinutes(),a=t.getSeconds();day.textContent=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"][t.getDay()],e=d>=12?"PM":"AM",0==d?d=12:d>12&&(d-=12),d=d<10?"0"+d:d,n=n<10?"0"+n:n,a=a<10?"0"+a:a,time.textContent=d+":"+n+":"+a,midday.textContent=e}),1e3);
+//# sourceMappingURL=index.665d0c46.js.map
