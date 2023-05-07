@@ -1,0 +1,59 @@
+.problem-wrapp {
+  pointer-events: all;
+  display: flex;
+}
+
+.mobile-wrapper {
+  position: relative;
+  margin-left: 150px;
+}
+
+.mobile {
+  position: absolute;
+  top: -18px;
+  left: -34px;
+  width: 378px;
+  height: 672px;
+  overflow-y: scroll;
+  background-color: #fff;
+  border: none;
+  scale: 0.75;
+}
+
+.our-problem {
+  width: 50%;
+  padding-top: 150px;
+}
+
+.problem-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.problem-item {
+  list-style: none;
+}
+.problem-link {
+  font-size: 48px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(251, 158, 9, 0.89);
+  animation: animateeee 20s linear infinite;
+}
+.problem-link::before {
+  content: attr(data-text);
+  position: absolute;
+  color: var(--clr);
+  width: 0;
+  overflow: hidden;
+  transition: 1.2s;
+  border-right: 8px solid var(--clr);
+  -webkit-text-stroke: 1px var(--clr);
+}
+.problem-link:hover::before {
+  width: 180vh;
+  filter: drop-shadow(0 0 25px var(--clr));
+}

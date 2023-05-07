@@ -1,0 +1,215 @@
+// .nav-button-prev {
+//   pointer-events: all;
+//   position: absolute;
+//   top: 20px;
+//   left: -67px;
+//   width: 45px;
+//   height: 30px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   color: #e5cfcf;
+//   font-size: 16px;
+//   text-decoration: none;
+//   background: linear-gradient(
+//     90deg,
+//     rgb(20, 20, 19),
+//     orange,
+//     rgb(20, 20, 19),
+//     orange,
+//     rgb(20, 20, 19),
+//     orange,
+//     rgb(20, 20, 19),
+//     orange,
+//     rgb(20, 20, 19)
+//   );
+//   background-size: 800%;
+//   border-radius: 20px;
+//   transform: translate(0%, -50%);
+// }
+// .nav-button-prev:hover,
+// .nav-button-next:hover,
+// .nav-button-home:hover,
+// .btn-ask:hover {
+//   animation: animater 15s linear infinite;
+// }
+// @keyframes animater {
+//   0% {
+//     background-position: 0%;
+//   }
+//   100% {
+//     background-position: 400%;
+//   }
+// }
+
+// .nav-button-next {
+//   pointer-events: all;
+//   position: absolute;
+//   top: 60px;
+//   left: -72px;
+//   width: 55px;
+//   height: 30px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   color: #e5cfcf;
+//   font-size: 16px;
+//   text-decoration: none;
+//   background: linear-gradient(
+//     90deg,
+//     rgb(20, 20, 19),
+//     orange,
+//     rgb(20, 20, 19),
+//     orange,
+//     rgb(20, 20, 19),
+//     orange,
+//     rgb(20, 20, 19),
+//     orange,
+//     rgb(20, 20, 19)
+//   );
+//   background-size: 800%;
+//   border-radius: 20px;
+//   transform: translate(0%, -50%);
+// }
+
+// .nav-button-home {
+//   pointer-events: all;
+//   position: absolute;
+//   top: 100px;
+//   left: -74px;
+//   width: 60px;
+//   height: 30px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   color: #e5cfcf;
+//   font-size: 16px;
+//   text-decoration: none;
+//   background: linear-gradient(
+//     90deg,
+//     rgb(20, 20, 19),
+//     orange,
+//     rgb(20, 20, 19),
+//     orange,
+//     rgb(20, 20, 19),
+//     orange,
+//     rgb(20, 20, 19),
+//     orange,
+//     rgb(20, 20, 19)
+//   );
+//   background-size: 800%;
+//   border-radius: 20px;
+//   transform: translate(0%, -50%);
+// }
+
+.btn-style {
+  pointer-events: all;
+  // position: relative;
+  background: #444;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  transition: 0.2s;
+}
+.pre {
+  position: absolute;
+  top: 20px;
+  left: -120px;
+}
+.next {
+  position: absolute;
+  top: 80px;
+  left: -120px;
+}
+.home {
+  position: absolute;
+  top: 140px;
+  left: -120px;
+}
+
+.exit {
+  position: absolute;
+  top: 5px;
+  right: 80px;
+}
+
+.btn-style:hover {
+  letter-spacing: 0.2rem;
+  padding: 1.1rem 2.1rem;
+  background: var(--clr);
+  color: var(--clr);
+  animation: box 3s infinite;
+}
+.btn-style::before {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: #272822;
+}
+.btn-style span {
+  position: relative;
+  z-index: 1;
+}
+.btn-style i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+.btn-style i::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 4px;
+  left: 80%;
+  top: -2px;
+  border: 2px solid var(--clr);
+  background: #272822;
+  transition: 0.2s;
+}
+.btn-style:hover i::before {
+  width: 15px;
+  left: 20%;
+  animation: move 3s infinite;
+}
+.btn-style i::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 4px;
+  left: 20%;
+  bottom: -2px;
+  border: 2px solid var(--clr);
+  background: #272822;
+  transition: 0.2s;
+}
+.btn-style:hover i::after {
+  width: 15px;
+  left: 80%;
+  animation: move 3s infinite;
+}
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes box {
+  0% {
+    box-shadow: #27272c;
+  }
+  50% {
+    box-shadow: 0 0 25px var(--clr);
+  }
+  100% {
+    box-shadow: #27272c;
+  }
+}

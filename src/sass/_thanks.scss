@@ -1,0 +1,75 @@
+.thanks-title {
+  margin-top: 250px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-size: 56px;
+  color: transparent;
+  text-align: center;
+}
+
+.thanks-text {
+  animation: animates 5s linear infinite;
+  margin: 0 5px;
+}
+.thanks-text:nth-child(even) {
+  animation-delay: 400ms;
+}
+@keyframes animates {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65.1%,
+  80%,
+  90.1%,
+  92% {
+    color: transparent;
+    text-shadow: none;
+  }
+  18.1%,
+  20.1%,
+  30%,
+  50%,
+  60.1%,
+  65%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    // color: rgba(255, 165, 0, 0.9);
+    color: rgba(0, 255, 0, 0.95);
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.2), 0 0 20px rgba(0, 255, 0, 0.2),
+      0 0 40px rgba(0, 255, 0, 0.2), 0 0 80px rgba(0, 255, 0, 0.2),
+      0 0 160px rgba(0, 255, 0, 0.2), 0 0 400px rgba(0, 255, 0, 0.2);
+  }
+}
+
+.post-wrapp {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 700px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.post-img {
+  width: 250px;
+}
+
+.post-box {
+  padding: 20px;
+}
+
+.post-text {
+  font-style: italic;
+  font-size: 22px;
+  color: orange;
+}
+
+.post-autor {
+  font-size: 16px;
+  color: orange;
+  text-align: end;
+}

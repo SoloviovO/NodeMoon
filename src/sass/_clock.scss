@@ -1,0 +1,66 @@
+.boxes-clock {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+.wrapper-clock {
+  width: 320px;
+  text-align: center;
+}
+
+.clock {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(15px);
+  padding: 30px 25px;
+  box-shadow: 0 25px 23px rgba(0, 0, 0, 0.15);
+  border: 1.5px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+}
+
+.shape1 {
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  background: linear-gradient(315deg, rgb(20, 20, 19), #0f0);
+  background: linear-gradient(135deg, rgb(20, 20, 19), #0f0);
+  animation: animateeee 20s linear infinite;
+  border-radius: 50%;
+  bottom: 90px;
+  right: -50px;
+  z-index: -1;
+}
+
+.shape2 {
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  background: linear-gradient(315deg, rgb(20, 20, 19), #0f0);
+  background: linear-gradient(135deg, rgb(20, 20, 19), #0f0);
+  animation: animateeee 20s linear infinite;
+  border-radius: 50%;
+  top: 90px;
+  left: -50px;
+  z-index: -1;
+}
+
+#time {
+  color: #e5cfcf;
+  font-size: 40px;
+  display: inline-block;
+}
+#day {
+  position: relative;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgb(255, 188, 3);
+  animation: animateeee 20s linear infinite;
+  text-align: center;
+}
+#midday {
+  color: #e5cfcf;
+  display: inline-block;
+  font-size: 30px;
+}
