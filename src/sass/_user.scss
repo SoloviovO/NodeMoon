@@ -88,7 +88,7 @@
 // }
 
 .user-img {
-  width: 88.4%;
+  width: 120%;
   display: inline-block;
 }
 
@@ -96,8 +96,8 @@
   pointer-events: all;
   position: absolute;
   top: 108px;
-  left: -400px;
-  width: 500px;
+  left: -500px;
+  width: 600px;
   height: 420px;
   perspective: 900px;
 }
@@ -132,6 +132,7 @@
 
 .info-user {
   padding: 35px 40px 20px 40px;
+  // width: 750px;
 }
 .user-title {
   text-align: center;
