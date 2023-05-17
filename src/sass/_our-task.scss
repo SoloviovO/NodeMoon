@@ -9,10 +9,10 @@
 }
 .box-card {
   position: relative;
-  width: 250px;
-  height: 400px;
+  width: 270px;
+  height: 380px;
   background: #f00;
-  margin: 20px 15px;
+  margin: 20px 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,6 +84,7 @@
 }
 .box-card .info-content {
   position: relative;
+  max-width: 260px;
   color: #fff;
   font-weight: 500;
   line-height: 1em;
